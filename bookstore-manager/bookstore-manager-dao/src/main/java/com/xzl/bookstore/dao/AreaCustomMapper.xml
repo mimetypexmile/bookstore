@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xzl.bookstore.dao.AreaCustomMapper" >
+  
+  <select id="listCitiesByCityCode" resultType="com.xzl.bookstore.pojo.po.Area">
+      SELECT a.id,a.code,a.name,a.citycode
+      FROM area a left join city c on a.citycode = c.code where c.code = #{citycode}
+  </select>
+</mapper>

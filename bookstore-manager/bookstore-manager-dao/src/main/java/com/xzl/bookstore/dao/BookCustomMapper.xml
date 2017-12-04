@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xzl.bookstore.dao.BookCustomMapper">
+    <sql id="Base_Column_List">
+    b.id, b.bookname, b.price, bc.name as categoryName, b.author, b.publish_time as publishTime, b.sell_point as sellPoint, b.created, b.updated,
+    b.inventory, b.sales_volume as salesVolume,b.state
+  </sql>
+    <select id="listBooksByPage" resultType="com.xzl.bookstore.pojo.vo.BookCustom">
+        select
+        <if test="distinct">
+            distinct
+        </if>
+        <include refid="Base_Column_List"/>
+        from book b left join book_category as bc on b.category_id = bc.id
+        where b.state = 1
+    </select>
+
+    <select id="countBooks" resultType="_int">
+        select count(1) from book b where b.state = 1
+    </select>
+
+    <select id="listBooksByState" resultType="com.xzl.bookstore.pojo.vo.BookCustom">
+        select
+        <include refid="Base_Column_List"/>
+        from book b left join book_category as bc on b.category_id = bc.id
+        where b.state = #{state}
+    </select>
+
+    <update id="updateCount" parameterType="java.util.List">
+
+        <foreach collection="list" item="item">
+            update book set inventory=#{item.inventory}
+            where id= -1 or
+              id=#{item.id};
+        </foreach>
+    </update>
+
+</mapper>

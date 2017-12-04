@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bookstore-common/bookstore-common.iml" filepath="$PROJECT_DIR$/bookstore-common/bookstore-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore-manager/bookstore-manager.iml" filepath="$PROJECT_DIR$/bookstore-manager/bookstore-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore-manager/bookstore-manager-dao/bookstore-manager-dao.iml" filepath="$PROJECT_DIR$/bookstore-manager/bookstore-manager-dao/bookstore-manager-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore-manager/bookstore-manager-interface/bookstore-manager-interface.iml" filepath="$PROJECT_DIR$/bookstore-manager/bookstore-manager-interface/bookstore-manager-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore-manager/bookstore-manager-pojo/bookstore-manager-pojo.iml" filepath="$PROJECT_DIR$/bookstore-manager/bookstore-manager-pojo/bookstore-manager-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore-manager/bookstore-manager-service/bookstore-manager-service.iml" filepath="$PROJECT_DIR$/bookstore-manager/bookstore-manager-service/bookstore-manager-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore-manager/bookstore-manager-web/bookstore-manager-web.iml" filepath="$PROJECT_DIR$/bookstore-manager/bookstore-manager-web/bookstore-manager-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore-parent/bookstore-parent.iml" filepath="$PROJECT_DIR$/bookstore-parent/bookstore-parent.iml" />
+    </modules>
+  </component>
+</project>

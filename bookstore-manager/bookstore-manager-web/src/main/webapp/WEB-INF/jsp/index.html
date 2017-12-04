@@ -1,0 +1,73 @@
+﻿<html >
+<head>
+<meta charset="UTF-8">
+<title>bookstore</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+<link href="../../css/mycss.css" rel="stylesheet">
+
+</head>
+<body>
+<!--<script src="/demos/googlegg.js"></script>-->
+<div class="cotn_principal">
+  <div class="cont_centrar">
+    <div class="cont_login">
+      <div class="cont_info_log_sign_up">
+        <div class="col_md_login">
+          <div class="cont_ba_opcitiy">
+            <h2>LOGIN</h2>
+            <p>点击此处登录</p>
+            <button class="btn_login" onClick="cambiar_login()">登录</button>
+          </div>
+        </div>
+        <div class="col_md_sign_up">
+          <div class="cont_ba_opcitiy">
+            <h2>SIGN UP</h2>
+            <p>点击此处注册</p>
+            <button class="btn_sign_up" onClick="cambiar_sign_up()">注册</button>
+          </div>
+        </div>
+      </div>
+      <div class="cont_back_info">
+        <div class="cont_img_back_grey"> <img src="../../images/register.jpg" alt="" /> </div>
+      </div>
+      <div class="cont_forms" >
+        <div class="cont_img_back_"> <img src="../../images/login.jpg" alt="" /> </div>
+        <div class="cont_form_login"> <a href="#" onClick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+          <h2>LOGIN</h2>
+          <input type="text" name="username" placeholder="用户名" />
+          <input type="password" name="password" placeholder="密码" />
+          <button class="btn_login" onClick="cambiar_login_on()">LOGIN</button>
+        </div>
+        <div class="cont_form_sign_up"> <a href="#" onClick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>    
+          <input type="text" name="username" placeholder="用户名" />
+          <input type="password" name="password" placeholder="密码" />
+          <input type="password" name="repassword" placeholder="确认密码" />
+          <input type="tel" name="tel" placeholder="联系方式" />
+          <input type="text" name="email" placeholder="邮箱" />
+          <button class="btn_sign_up" onClick="cambiar_sign_up_on()">注册</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../../js/index.js"></script>
+<script>
+	function cambiar_sign_up_on(){
+        alert("注册");
+
+	    $.ajax(function () {
+          console.log($(".cont_form_sign_up input"));
+        });
+
+	}
+</script>
+<script>
+	function cambiar_login_on(){
+		alert("登录");
+	}
+</script>
+</body>
+</html>
+

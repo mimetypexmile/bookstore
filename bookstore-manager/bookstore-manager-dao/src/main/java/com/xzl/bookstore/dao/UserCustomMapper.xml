@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xzl.bookstore.dao.UserCustomMapper" >
+
+  <select id="login" parameterType="com.xzl.bookstore.pojo.po.User" resultType="com.xzl.bookstore.pojo.po.User">
+      SELECT username,password from user as u where u.username=#{username} and u.password =#{password}
+  </select>
+
+
+    <update id="updateAccount" parameterType="com.xzl.bookstore.pojo.po.User">
+        update user u set u.account = #{account} where u.id = #{id} or u.id =  -1
+    </update>
+</mapper>

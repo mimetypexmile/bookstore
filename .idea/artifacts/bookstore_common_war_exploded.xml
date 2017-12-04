@@ -1,0 +1,40 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="bookstore-common:war exploded">
+    <output-path>$PROJECT_DIR$/bookstore-common/target/bookstore-common</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="bookstore-common" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: redis.clients:jedis:2.7.2" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-pool2:2.3" />
+          <element id="library" level="project" name="Maven: joda-time:joda-time:2.5" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.3.2" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
+          <element id="library" level="project" name="Maven: commons-net:commons-net:3.3" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.4.3" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.4.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.4.3" />
+          <element id="library" level="project" name="Maven: org.json:json:20160212" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.21" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.1.1" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.1.1" />
+          <element id="library" level="project" name="Maven: org.apache.activemq:activemq-all:5.11.3" />
+          <element id="library" level="project" name="Maven: org.apache.solr:solr-solrj:4.10.3" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.3.5" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.3" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpmime:4.3.1" />
+          <element id="library" level="project" name="Maven: org.apache.zookeeper:zookeeper:3.4.6" />
+          <element id="library" level="project" name="Maven: org.codehaus.woodstox:wstx-asl:3.2.7" />
+          <element id="library" level="project" name="Maven: org.noggit:noggit:0.5" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/bookstore-common/target/bookstore-common/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="bookstore-common/web/Web" />
+    </root>
+  </artifact>
+</component>
